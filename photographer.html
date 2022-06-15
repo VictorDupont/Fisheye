@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- STYLE IMPORT  -->
+		<link rel="stylesheet" href="public/css/style.css" />
+		<title>FishEye photographe</title>
+		<meta name="description" content="Page personnel d'un photographe" />
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<a href="index.html">
+						<img src="./public/img/fish-eye-logo.png" alt="Fisheye Home page" />
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<form action="photographer.html" class="divorder">
+				<label for="orderBy" class="order-by__label" aria-label="Order by">Trier par</label>
+				<select name="order" id="orderBy" class="order-by__select">
+					<option value="">Option</option>
+					<option value="Popularité" class="order-by__option">Popularité</option>
+					<option value="Date" class="order-by__option">Date</option>
+					<option value="Titre" class="order-by__option">Titre</option>
+				</select>
+			</form>
+
+			<div id="media-cards-deck" class="cards-deck"></div>
+			<div class="photographer-contact">
+				<button
+					type="button"
+					id="contact-btn--small"
+					class="button button-contact button-contact--small"
+					aria-label="Contact Me"
+				>
+					Contactez-moi
+				</button>
+			</div>
+		</main>
+
+		<script src="https://kit.fontawesome.com/1243262ebe.js" crossorigin="anonymous"></script>
+		<script type="module" src="js/pages/photographer.js"></script>
+	</body>
+</html>
