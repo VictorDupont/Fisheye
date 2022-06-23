@@ -48,6 +48,16 @@ export default class Banner {
 			console.log(lastName.value);
 			console.log(email.value);
 			console.log(userTextArea.value);
+			const contactMdl = document.getElementById("contact-modal");
+			firstName.value = "";
+			lastName.value = "";
+			email.value = "";
+			userTextArea.value = "";
+			contactMdl.classList.add("sr-only");
+			contactMdl.setAttribute("aria-hidden", "true");
+			contactMdl.style.display = "none";
+			document.querySelector("header").setAttribute("aria-hidden", "false");
+			document.querySelector("main").setAttribute("aria-hidden", "false");
 		});
 	}
 }
